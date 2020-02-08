@@ -1,0 +1,18 @@
+version: '3.7'
+
+# docker-compose 1.25.0
+# docker engine 19.03.5
+
+services:
+    zookeeper:
+        image: zookeeper:3.4
+        hostname: zookeeper
+        container_name: zookeeper
+        ports:
+            - 2181:2181
+        network_mode: host
+    memcached:
+        image: mserver
+        network_mode: host
+        ports: 
+            - 11211-11215:11211

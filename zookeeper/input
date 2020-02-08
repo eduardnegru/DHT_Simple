@@ -1,0 +1,5 @@
+SLEEP 1000
+PUT car bmw
+GET car
+SLEEP 10000
+GET car
